@@ -1,30 +1,229 @@
-
-
 @media (min-width: 1900px) {
-    .projects {
-        height: 30vh;
-    }
-
-    .qualification, .responsibilities {
-        font-size: 1.3rem;
-    }
+  .qualification,
+  .responsibilities {
+    font-size: 1.3rem;
+  }
 }
 
 @media (min-width: 2500px) {
-    .name {
-        font-size: 5rem;
-    }
+  .name {
+    font-size: 5rem;
+  }
 
-    .photo-name h3 {
-        font-size: 2.5rem;
-    }
+  .photo-name h3 {
+    font-size: 2.5rem;
+  }
 
-    .photo {
-        width: 400px;
-        height: 400px;
-    }
+  .photo {
+    width: 400px;
+    height: 400px;
+  }
 
-    .social ul li {
-        font-size: 4rem;
-      }
+  .social ul li {
+    font-size: 4rem;
+  }
+
+  .social h2,
+  .skills h2 {
+    font-size: 3rem;
+  }
+  .education h2,
+  .experience h2,
+  .projects h2,
+  .summary h2,
+  .additional h2,
+  .languages h2 {
+    font-size: 3rem;
+    margin-top: 1em;
+  }
+
+  .education-block h4,
+  .experience-block h4 {
+    font-size: 2rem;
+  }
+
+  .degree,
+  .place {
+    font-size: 1.4rem;
+  }
+
+  .university,
+  .position {
+    font-size: 1.5rem;
+  }
+
+  .qualification,
+  .responsibilities {
+    font-size: 1.6rem;
+  }
+
+  .summary,
+  .additional,
+  .languages {
+    font-size: 1.5rem;
+  }
+
+  .download {
+    font-size: 1.5rem;
+  }
+
+  .flag {
+    width: 67px;
+    height: 50px;
+  }
+}
+
+@media (min-width: 3800px) {
+  .name {
+    font-size: 5.5rem;
+  }
+
+  .photo-name h3 {
+    font-size: 3.5rem;
+  }
+
+  .photo {
+    width: 500px;
+    height: 500px;
+  }
+
+  .social ul li {
+    font-size: 7rem;
+  }
+
+  .social h2,
+  .skills h2 {
+    font-size: 4.5rem;
+  }
+  .education h2,
+  .experience h2,
+  .projects h2,
+  .summary h2,
+  .additional h2,
+  .languages h2 {
+    font-size: 4.5rem;
+    margin-top: 1.5em;
+  }
+
+  .education-block h4,
+  .experience-block h4 {
+    font-size: 3rem;
+  }
+
+  .degree,
+  .place {
+    font-size: 1.8rem;
+  }
+
+  .university,
+  .position {
+    font-size: 2rem;
+  }
+
+  .qualification,
+  .responsibilities {
+    font-size: 2.2rem;
+  }
+
+  .summary,
+  .additional,
+  .languages {
+    font-size: 2rem;
+  }
+
+  .download {
+    font-size: 2.2rem;
+  }
+
+  .flag {
+    width: 97px;
+    height: 80px;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  body {
+    flex-direction: column;
+    width: 100vw;
+  }
+  .side-panel {
+    width: 100vw;
+    height: 66vh;
+    margin: 0 0 2vh 0;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 40vw 60vw;
+    grid-template-areas:
+      "photo social"
+      "photo skills";
+  }
+
+  .main-info {
+    width: 100vw;
+    margin: 0;
+  }
+
+  .photo-name {
+    grid-area: photo;
+    margin-bottom: 10vh;
+  }
+  .photo {
+    width: 220px;
+    height: 220px;
+  }
+
+  .social {
+    grid-area: social;
+    margin-top: 1vh;
+  }
+
+  .skills {
+    grid-area: skills;
+    margin-bottom: 19vh;
+  }
+
+
+  .skills ul li img {
+    width: 9vw;
+    height: 9vw;
+  }
+
+  .wrap-education-experience {
+      width: 100vw;
+      height: 30vh;
+      margin-bottom: 2vh;
+  }
+  .education,
+  .experience {
+    width: 49.5vw;
+  }
+
+  .projects {
+    margin-bottom: 2vh;
+    height: 60vh;
+    width: 100vw;
+  }
+  .image-grid-item {
+      flex-basis: 28vw;
+  }
+  .wrap-summary-lang-additional {
+      width: 100vw;
+      height: 38vh;
+      justify-content: space-between;
+  }
+
+    .summary {
+      width: 39vw;
+  }
+  .additional {
+      width: 39vw;
+      margin-left: 0;
+  }
+  
+  .languages {
+      width: 20vw;
+      margin-left: 0;
+  }
+  
+
 }
