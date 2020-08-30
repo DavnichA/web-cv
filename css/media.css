@@ -1,0 +1,30 @@
+
+
+@media (min-width: 1900px) {
+    .projects {
+        height: 30vh;
+    }
+
+    .qualification, .responsibilities {
+        font-size: 1.3rem;
+    }
+}
+
+@media (min-width: 2500px) {
+    .name {
+        font-size: 5rem;
+    }
+
+    .photo-name h3 {
+        font-size: 2.5rem;
+    }
+
+    .photo {
+        width: 400px;
+        height: 400px;
+    }
+
+    .social ul li {
+        font-size: 4rem;
+      }
+}

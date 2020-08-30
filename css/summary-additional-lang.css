@@ -1,0 +1,79 @@
+/* other information */
+
+.wrap-summary-lang-additional {
+    height: 26.5vh;
+    display: flex;
+    flex-direction: row;
+  }
+  .summary, .additional, .languages {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: var(--background-block);
+      font-size: 1rem;
+      line-height: 1.5em;
+  }
+  
+  .summary h2, .additional h2, .languages h2 {
+      margin-top: 20px;
+  }
+  
+  .summary {
+      width: 26vw;
+  }
+  .additional {
+      width: 26vw;
+      margin-left: 1vw;
+  }
+  
+  .languages {
+      width: 15vw;
+      margin-left: 1vw;
+  }
+  
+  .summary p {
+      text-align: center;
+  }
+  .additional ul {
+      width: 80%;
+  }
+  
+  .languages ul {
+      width: 70%;
+      line-height: 1em;
+  }
+  
+  .languages ul li {
+      list-style-type: none;
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+      justify-content: space-between;
+  }
+  
+  
+  .flag {
+      width: 47px;
+      height: 30px;
+      background-size: cover;
+  }
+  .flag-left {
+      margin-right: 46px;
+  }
+  
+  #eng {
+      background-image: url(../images/united.png);
+  }
+  #ukr {
+      background-image: url(../images/ukraine.png);
+  }
+  #rus {
+      background-image: url(../images/russia.png);
+  }
+  
+  .download {
+      color: var(--purple);
+      text-decoration: none;
+      font-size: 1.2rem;
+      margin-top: 5vh;
+  }
