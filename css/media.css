@@ -382,7 +382,7 @@
   }
   .side-panel {
     width: 100vw;
-    height: 100vh;
+    height: auto;
     margin: 0;
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -394,12 +394,12 @@
 
   .main-info {
     width: 100vw;
-    height: none;
+    height: auto;
   }
 
   .photo-name {
     grid-area: photo;
-    margin-bottom: 10vh;
+    margin-bottom: 70vh;
   }
 
   .photo-name h3 {
@@ -430,14 +430,14 @@
 
   .wrap-education-experience {
     width: 100vw;
-    height: 100vh;
+    height: auto;
     flex-wrap: wrap;
-    margin-bottom: 2vh;
   }
   .education,
   .experience {
     width: 100vw;
-    margin-top: 2vh;
+    margin-top: 1.5vh;
+    padding-bottom: 5vh;
   }
 
   .education-block h4,
@@ -461,31 +461,32 @@
   }
   /* ------------------- */
   .projects {
-    margin-top: 2vh;
-    margin-bottom: 2vh;
-    height: 100vh;
+    margin-top: 1.5vh;
+    height: auto;
     width: 100vw;
+    padding-bottom: 5vh;
   }
   .image-grid {
     flex-wrap: wrap;
   }
   .image-grid-item {
-    width: 45%;
-    height: 45%;
+    width: 45vw;
+    height: 45vh;
   }
 
   /* ----------------- */
   .wrap-summary-lang-additional {
+    margin-top: 1.5vh;
     width: 100vw;
-    height: 100vh;
+    height: auto;
     justify-content: space-between;
     flex-wrap: wrap;
   }
 
   .summary {
     width: 100vw;
-    padding-bottom: 2vh;
-    height: 38vh;
+    padding-bottom: 5vh;
+    height: auto;
   }
 
   .summary p {
@@ -493,10 +494,10 @@
   }
   .additional {
     width: 60vw;
-    height: 52vh;
+    height: auto;
     margin-top: 1vh;
     margin-left: 0;
-    padding-bottom: 2vh;
+    padding-bottom: 5vh;
   }
   .additional ul {
     font-size: 1.3rem;
@@ -505,8 +506,8 @@
   .languages {
     margin-top: 1vh;
     width: 39vw;
-    height: 52vh;
-    padding-bottom: 3vh;
+    height: auto;
+    padding-bottom: 5vh;
   }
 
   .languages ul li {
@@ -533,14 +534,14 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: flex-start;
-    height: 100vh;
+    height: auto;
     padding-bottom: 1.5vh;
   }
 
   .main-info {
     width: 100vw;
     margin: 0;
-    height: none;
+    height: auto;
   }
 
   .photo-name {
@@ -578,10 +579,10 @@
 
   .wrap-education-experience {
     width: 100vw;
-    height: 130vh;
+    height: auto;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: flex-start;
     align-content: flex-start;
   }
@@ -632,7 +633,7 @@
 
   .projects {
     margin-top: 1.5vh;
-    height: 100vh;
+    height: auto;
     width: 100vw;
   }
   .image-grid {
@@ -648,7 +649,7 @@
 
   .wrap-summary-lang-additional {
     width: 100vw;
-    height: none;
+    height: auto;
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 1.5vh;
@@ -657,7 +658,7 @@
   .summary {
     width: 100vw;
     padding-bottom: 2vh;
-    height: 25vh;
+    height: auto;
   }
 
   .summary p {
@@ -665,7 +666,7 @@
   }
   .additional {
     width: 100vw;
-    height: 30vh;
+    height: auto;
     margin-top: 1.5vh;
     margin-left: 0;
     padding-bottom: 2vh;
@@ -677,7 +678,7 @@
   .languages {
     margin-top: 1.5vh;
     width: 100vw;
-    height: none;
+    height: auto;
     margin-left: 0;
     padding-bottom: 6vh;
   }
