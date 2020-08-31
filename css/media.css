@@ -27,6 +27,7 @@
   .skills h2 {
     font-size: 3rem;
   }
+  /* ----------------- */
   .education h2,
   .experience h2,
   .projects h2,
@@ -182,48 +183,521 @@
     margin-bottom: 19vh;
   }
 
-
   .skills ul li img {
     width: 9vw;
     height: 9vw;
   }
 
+  /* ----------------- */
+
   .wrap-education-experience {
-      width: 100vw;
-      height: 30vh;
-      margin-bottom: 2vh;
+    width: 100vw;
+    height: 30vh;
+    margin-bottom: 2vh;
   }
   .education,
   .experience {
     width: 49.5vw;
   }
 
+  /* ----------------- */
   .projects {
     margin-bottom: 2vh;
     height: 60vh;
     width: 100vw;
   }
-  .image-grid-item {
-      flex-basis: 28vw;
+  .image-grid {
+    flex-wrap: wrap;
   }
+  .image-grid-item {
+    width: 40%;
+    height: 45%;
+  }
+  /* ----------------- */
   .wrap-summary-lang-additional {
-      width: 100vw;
-      height: 38vh;
-      justify-content: space-between;
+    width: 100vw;
+    height: 38vh;
+    justify-content: space-between;
   }
 
-    .summary {
-      width: 39vw;
+  .summary {
+    width: 39vw;
   }
   .additional {
-      width: 39vw;
-      margin-left: 0;
+    width: 39vw;
+    margin-left: 0;
   }
-  
-  .languages {
-      width: 20vw;
-      margin-left: 0;
-  }
-  
 
+  .languages {
+    width: 20vw;
+    margin-left: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  body {
+    flex-direction: column;
+    width: 100vw;
+  }
+  .side-panel {
+    width: 100vw;
+    height: 45vh;
+    margin: 0;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 40vw 60vw;
+    grid-template-areas:
+      "photo social"
+      "photo skills";
+  }
+
+  .main-info {
+    width: 100vw;
+    margin: 0;
+  }
+
+  .photo-name {
+    grid-area: photo;
+    margin-bottom: 10vh;
+  }
+
+  .photo-name h3 {
+    font-size: 1.2rem;
+  }
+
+  .photo {
+    width: 220px;
+    height: 220px;
+  }
+
+  .social {
+    grid-area: social;
+    margin-top: 1vh;
+  }
+
+  .skills {
+    grid-area: skills;
+    margin-bottom: 19vh;
+  }
+
+  .skills ul li img {
+    width: 9vw;
+    height: 9vw;
+  }
+
+  /* ------------- */
+
+  .wrap-education-experience {
+    width: 100vw;
+    height: 51vh;
+    flex-wrap: wrap;
+    margin-bottom: 1vh;
+  }
+  .education,
+  .experience {
+    width: 100vw;
+    height: 22.5vh;
+    margin-top: 1vh;
+  }
+
+  .education-block h4,
+  .experience-block h4 {
+    font-size: 1.5rem;
+  }
+
+  .degree,
+  .place {
+    font-size: 1.2rem;
+  }
+
+  .university,
+  .position {
+    font-size: 1.3rem;
+  }
+
+  .qualification,
+  .responsibilities {
+    font-size: 1.3rem;
+  }
+  /* ------------------- */
+  .projects {
+    margin-bottom: 1vh;
+    height: 60vh;
+    width: 100vw;
+  }
+  .image-grid {
+    flex-wrap: wrap;
+  }
+  .image-grid-item {
+    width: 45%;
+    height: 45%;
+  }
+
+  /* ----------------- */
+  .wrap-summary-lang-additional {
+    width: 100vw;
+    height: 38vh;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .summary {
+    width: 100vw;
+    padding-bottom: 2vh;
+  }
+
+  .summary p {
+    font-size: 1.3rem;
+  }
+  .additional {
+    width: 60vw;
+    margin-top: 1vh;
+    margin-left: 0;
+    padding-bottom: 2vh;
+  }
+  .additional ul {
+    font-size: 1.3rem;
+  }
+
+  .languages {
+    margin-top: 1vh;
+    width: 38vw;
+    padding-bottom: 3vh;
+  }
+
+  .languages ul li {
+    font-size: 1.3rem;
+  }
+
+  .download {
+    margin-top: 3vh;
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  body {
+    flex-direction: column;
+    width: 100vw;
+  }
+  .side-panel {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 40vw 60vw;
+    grid-template-areas:
+      "photo social"
+      "photo skills";
+  }
+
+  .main-info {
+    width: 100vw;
+    height: none;
+  }
+
+  .photo-name {
+    grid-area: photo;
+    margin-bottom: 10vh;
+  }
+
+  .photo-name h3 {
+    font-size: 1rem;
+  }
+
+  .photo {
+    width: 220px;
+    height: 220px;
+  }
+
+  .social {
+    grid-area: social;
+    margin-top: 1vh;
+  }
+
+  .skills {
+    grid-area: skills;
+    margin-bottom: 19vh;
+  }
+
+  .skills ul li img {
+    width: 9vw;
+    height: 9vw;
+  }
+
+  /* ------------- */
+
+  .wrap-education-experience {
+    width: 100vw;
+    height: 100vh;
+    flex-wrap: wrap;
+    margin-bottom: 2vh;
+  }
+  .education,
+  .experience {
+    width: 100vw;
+    margin-top: 2vh;
+  }
+
+  .education-block h4,
+  .experience-block h4 {
+    font-size: 1.5rem;
+  }
+
+  .degree,
+  .place {
+    font-size: 1.2rem;
+  }
+
+  .university,
+  .position {
+    font-size: 1.3rem;
+  }
+
+  .qualification,
+  .responsibilities {
+    font-size: 1.3rem;
+  }
+  /* ------------------- */
+  .projects {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    height: 100vh;
+    width: 100vw;
+  }
+  .image-grid {
+    flex-wrap: wrap;
+  }
+  .image-grid-item {
+    width: 45%;
+    height: 45%;
+  }
+
+  /* ----------------- */
+  .wrap-summary-lang-additional {
+    width: 100vw;
+    height: 100vh;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .summary {
+    width: 100vw;
+    padding-bottom: 2vh;
+    height: 38vh;
+  }
+
+  .summary p {
+    font-size: 1.3rem;
+  }
+  .additional {
+    width: 60vw;
+    height: 52vh;
+    margin-top: 1vh;
+    margin-left: 0;
+    padding-bottom: 2vh;
+  }
+  .additional ul {
+    font-size: 1.3rem;
+  }
+
+  .languages {
+    margin-top: 1vh;
+    width: 39vw;
+    height: 52vh;
+    padding-bottom: 3vh;
+  }
+
+  .languages ul li {
+    font-size: 1.3rem;
+  }
+
+  .download {
+    margin-top: 3vh;
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  body {
+    flex-direction: column;
+    width: 100vw;
+  }
+
+  .side-panel {
+    width: 100vw;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+  }
+
+  .main-info {
+    width: 100vw;
+    margin: 0;
+    height: none;
+  }
+
+  .photo-name {
+    margin-bottom: 10vh;
+    width: 100vw;
+    margin-bottom: 0;
+    padding-top: 5vh;
+  }
+
+  .photo-name h3 {
+    font-size: 1.2rem;
+  }
+
+  .photo {
+    width: 220px;
+    height: 220px;
+  }
+
+  .social {
+    margin-top: 1vh;
+    width: 100vw;
+  }
+
+  .skills {
+    width: 100vw;
+    flex-wrap: wrap;
+  }
+
+  .skills ul li img {
+    width: 13vw;
+    height: 13vw;
+  }
+
+  /* ------------- */
+
+  .wrap-education-experience {
+    width: 100vw;
+    height: 130vh;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+  }
+
+  .education,
+  .experience {
+    width: 100vw;
+    padding: 2vh 0;
+    margin-top: 1.5vh;
+  }
+
+  .wrap-experience-blocks,
+  .wrap-education-blocks {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+  .education-block,
+.experience-block {
+    width: 100vw;
+}
+
+  .education-block h4,
+  .experience-block h4 {
+    font-size: 1.5rem;
+    margin-top: 3vh;
+  }
+
+  .degree,
+  .place {
+    font-size: 1.2rem;
+    margin-top: 1vh;
+  }
+
+  .university,
+  .position {
+    font-size: 1.3rem;
+  }
+
+  .qualification,
+  .responsibilities {
+    font-size: 1.3rem;
+    margin-top: 3vh;
+  }
+
+  /* ------------- */
+
+  .projects {
+    margin-top: 1.5vh;
+    height: 100vh;
+    width: 100vw;
+  }
+  .image-grid {
+    flex-wrap: wrap;
+  }
+  .image-grid-item {
+    width: 99vw;
+    height: 25vh;
+    margin-top: 1.5vh;
+  }
+
+  /* ------------- */
+
+  .wrap-summary-lang-additional {
+    width: 100vw;
+    height: none;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 1.5vh;
+  }
+
+  .summary {
+    width: 100vw;
+    padding-bottom: 2vh;
+    height: 25vh;
+  }
+
+  .summary p {
+    font-size: 1.3rem;
+  }
+  .additional {
+    width: 100vw;
+    height: 30vh;
+    margin-top: 1.5vh;
+    margin-left: 0;
+    padding-bottom: 2vh;
+  }
+  .additional ul {
+    font-size: 1.3rem;
+  }
+
+  .languages {
+    margin-top: 1.5vh;
+    width: 100vw;
+    height: none;
+    margin-left: 0;
+    padding-bottom: 6vh;
+  }
+
+  .languages ul li {
+    font-size: 1.3rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .languages ul li span {
+      margin-left: 0;
+      margin-top: 1.5vh;
+  }
+
+  .languages ul {
+      flex-direction: row;
+      margin-top: 1.5vh;
+  }
+  .download {
+    margin-top: 3vh;
+    font-size: 1.3rem;
+  }
 }
